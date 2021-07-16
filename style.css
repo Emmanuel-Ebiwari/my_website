@@ -1,0 +1,305 @@
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+*{
+    padding: 0;
+    margin: 0;
+    --nav-height: 10vh;
+    --footer-height:10vh;
+    --header-padding:10px;
+    --article-width: 70%;
+    --padding: 2% 0 ;
+
+}
+body, html {
+    display: flex;
+    flex-direction: column;
+    background-color: #D8DBE2;
+    background-image: url(https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left;
+    background-attachment: fixed;
+    font-family: 'Josefin Sans', serif;
+	color: rgba(0, 0, 0, 0.8);
+    font-size: 13pt;
+    text-align: left;
+  }
+header{
+    display: block;
+    padding: var(--header-padding);
+    background-color: rgba(255, 255, 255, 0.507);
+}
+nav{
+    display: flex;
+    height: var(--nav-height);
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.social-share-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: yellow;
+    padding: 1%;
+    height: inherit;
+}
+
+.active-page{
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(190, 190, 190, 0.8);
+    padding: 5px;
+}
+.active-page a{
+    color: white;
+}
+main{
+    display: flex;
+    flex: auto;
+    height: calc(100vh - (var(--nav-height) + (var(--header-padding) * 2)) - var(--footer-height));
+    overflow-y: auto;
+}
+
+article{
+    flex: 2;
+    height: calc(inherit - (var(--padding) * 2));
+    width: 100%;
+    padding: 3% var(--padding);
+    overflow-y: auto;
+    /* background-image: url(https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left; */
+    font-weight: bolder;
+    /* background-attachment: fixed; */
+}
+h2{
+    margin: 5% 0 3% 0;
+}
+
+h1, h2, h3, h4, h5, h6, header {
+	font-family: 'Yeseva One', sans-serif;
+}
+header {
+	border-bottom: 1px solid rgb(221,221,221);
+	transition: border-bottom-color 1s ease;
+}
+header a {
+	color: rgba(0, 0, 0, 0.8);
+}
+a {
+	color: #F80002;
+}
+p{
+    line-height: 2rem;
+}
+aside{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    border-left: 1px solid white;
+    background-color: rgb(190, 190, 190, 0.8);
+    overflow-y: auto;
+}
+
+aside p {
+	border: 1px solid #bbb;
+	background: #ddd;
+	color: black;
+}
+footer{
+    display: flex;
+    height: var(--footer-height);
+    justify-content: center;
+    background-color: rgb(190, 190, 190, 0.8);
+    align-items: center;
+    font-size: 20px;
+}
+
+footer a {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.homepage-article{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    }
+#greeting-text{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(43, 42, 42);
+    height: inherit;
+    text-align: left;
+    font-size: 1.8rem;
+}
+#typewriter{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: tomato;
+    text-align: left;
+}
+.cursor{
+    width: 3px;
+    background-color: white;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+.noblink{
+    animation: none;
+}
+@keyframes blink {
+    49%{background-color: white;}
+    50%{background-color: transparent;}
+    99%{background-color: transparent;}
+    100%{background-color: white;}
+}
+
+
+.twitter-article{
+    display:flex;
+    flex-direction: column;
+    padding: var(--padding);
+    height: calc(inherit - (var(--padding) * 2));
+    align-items: center;
+    border: none;
+    background: rgba(255, 255, 255, 0.712);
+    width: 100%;
+    }
+
+.contact-article{
+    display:flex;
+    padding: var(--padding);
+    height: calc(inherit - (var(--padding) * 2));
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: rgba(255, 255, 255, 0.712);
+    width: 100%;
+    }
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.712);
+    border-radius: 20px;
+    padding: 3%;
+    background-color: rgb(190, 190, 190, 0.8);
+}
+
+input{
+    width: 90%;
+    height: 15%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.507);
+    text-indent: 10px;
+    margin: 1%;
+    font-size: 20px;
+    color: white;
+}
+input[type='submit']{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.507);
+    font-weight: bolder;
+    text-align: center;
+}
+textarea{
+    width: 90%;
+    height: 30%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.507);
+    text-indent: 10px;
+    margin: 1%;
+    font-size: 20px;
+    color: white;
+    padding: 1%;
+}
+.about-article{
+    background-color: rgba(255, 255, 255, 0.712);
+    color: black;
+    }
+
+.about-article h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+  
+  img {
+      max-width: 100%;
+  }
+  
+  img.small {
+      width: 100px;
+  }
+
+  #disqus_thread{
+      width: 80%;
+      height: 90%;
+  }
+
+  .twitter-tweet{
+    width: 80%;
+  }
+
+  @media (max-width: 800px) {
+    body.works_on_smartphone {
+        display: block;
+    }
+    body.works_on_smartphone main {
+        display: block;
+    }
+    header .right {
+        float: none;
+    }
+    .contacts aside{
+        display: none;
+    }
+    form{
+        height: 70%;
+        width: 80%;
+    }
+    ul{
+        flex-wrap: wrap;
+        overflow-y: auto;
+    }
+
+    .homepage-article{
+        height: calc(80vh - (var(--padding) * 2));
+        width: 100%;
+        font-size: 0.5rem;
+        }
+    #greeting-text{
+        text-align: center;
+    }
+  }

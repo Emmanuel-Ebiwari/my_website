@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://alx-apply.hbtn.io" target="_blank">
+                <img src="https://alx-apply.hbtn.io/brand_alx/alx-logo.png" alt="image" width="200px" height="auto" />
+              </a>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="tweets.html">Tweets</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active-page"><a href="contacts.html">Contact</a></li>
+            </ul>
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2F44.192.71.71%2Findex.html&layout=button_count&size=small&width=77&height=20&appId" 
+            width="77" height="20" style="border:none;overflow:hidden" 
+            scrolling="no" frameborder="0" allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+            class="twitter-share-button" data-show-count="false">Tweet
+            </a><script async src="https://platform.twitter.com/widgets.js" 
+            charset="utf-8">
+            </script>
+        </nav>
+    </header>
+    <main class="contacts">
+        <article class="contact-article">
+            <form action="">
+                <input type="text" placeholder="full name"/>
+                <input type="email" placeholder="example@gmail.com"/>
+                <textarea placeholder="comments"></textarea>
+                <input type="submit" value="Send" />
+            </form>
+        </article>
+        <aside>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            
+                var disqus_config = function () {
+                this.page.url = "http://44.192.71.71/contacts.html";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = 'contacts-page'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://http-44-192-71-71.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">
+              comments powered by Disqus.</a></noscript>
+        </aside>
+    </main>
+    <footer>
+        Made by Emmanuel Ebiwari for <a href="https://alx-apply.hbtn.io" target="_blank">&nbsp;ALX</a>.
+    </footer>
+</body>
+</html>
